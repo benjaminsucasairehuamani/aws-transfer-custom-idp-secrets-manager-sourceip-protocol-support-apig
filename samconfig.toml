@@ -1,0 +1,13 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sftp-stack-bash"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1ogrpp4xftm51"
+s3_prefix = "sftp-stack-bash"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+parameter_overrides = "CreateServer=\"true\" SecretsManagerRegion=\"\" TransferEndpointType=\"VPC\" TransferSubnetIDs=\"subnet-0ec4ab352d8a01742,subnet-09f6852aae26b5756\" TransferVPCID=\"vpc-0bdaf2f654ddd3757\""
+image_repositories = []
